@@ -26,9 +26,9 @@ class FibonacciTest{
     
     private func resultTest(_ isFibonacciNumber: Bool,_ number: Int){
         if isFibonacciNumber {
-            print("\(number) pertence à sequência de Fibonacci.")
+            print("Número \(number) pertence à sequência de Fibonacci.")
         } else {
-            print("\(number) não pertence à sequência de Fibonacci.")
+            print("Número \(number) não pertence à sequência de Fibonacci.")
         }
     }
     

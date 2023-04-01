@@ -7,6 +7,8 @@
 
 import Foundation
 
+print("Candidato: Bruno Lafayette Barbosa dos Santos")
+
 let test2 = FibonacciTest.shared
 test2.executeTestFibonacci()
 

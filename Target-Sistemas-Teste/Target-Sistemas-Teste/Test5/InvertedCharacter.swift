@@ -27,8 +27,8 @@ struct InvertedCharacter{
         print("Digite a String que será invertida:")
         let originalString = readLine() ?? "lamento, mas voce nao digitou nada"
         let invertedString = invertString(string: originalString)
-        print("\n\nString original: \(originalString)")
-        print("String invertida: \(invertedString)")
+        print("\nString original: \(originalString)")
+        print("String invertida: \(invertedString)\n\n\n")
     }
  
 }

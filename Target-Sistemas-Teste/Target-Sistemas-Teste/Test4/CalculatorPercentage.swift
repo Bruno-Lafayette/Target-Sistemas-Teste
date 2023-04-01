@@ -34,7 +34,6 @@ class CalculatorPercentage{
         for invoice in invoicing {
             percentageByState[invoice.key] = invoice.value/(total) * Double(percentage)
         }
-        print(percentageByState)
         return percentageByState
     }
     

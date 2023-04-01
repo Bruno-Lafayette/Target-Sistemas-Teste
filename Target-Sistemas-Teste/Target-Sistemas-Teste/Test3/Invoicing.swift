@@ -26,10 +26,10 @@ class Invoicing {
                 }
             }
         }
-        var highestValue = dailyBilling.max { $0.valor < $1.valor }?.valor ?? 0
-        var sumBilling = dailyBilling.reduce(0) { $0 + $1.valor }
-        var monthlyAverage = sumBilling / Double(dailyBilling.count)
-        var aboveAverageDays = dailyBilling.filter { $0.valor > monthlyAverage }.count
+        let highestValue = dailyBilling.max { $0.valor < $1.valor }?.valor ?? 0
+        let sumBilling = dailyBilling.reduce(0) { $0 + $1.valor }
+        let monthlyAverage = sumBilling / Double(dailyBilling.count)
+        let aboveAverageDays = dailyBilling.filter { $0.valor > monthlyAverage }.count
         return (lowerValue, highestValue, aboveAverageDays)
     }
     
